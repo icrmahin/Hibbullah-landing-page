@@ -1,0 +1,31 @@
+interface LogoProps {
+  className?: string;
+  showText?: boolean;
+}
+
+export function Logo({ className = "", showText = true }: LogoProps) {
+  return (
+    <a href="/" className={`inline-flex items-center gap-2.5 ${className}`} aria-label="Hibbullah Home">
+      <svg
+        width="36"
+        height="36"
+        viewBox="0 0 36 36"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="shrink-0"
+        aria-hidden="true"
+      >
+        <rect width="36" height="36" rx="9" fill="#023719" />
+        <path
+          d="M10 12h4.5v12H10V12zm11.5 0c2.76 0 5 2.24 5 5s-2.24 5-5 5H18v2h5.5v2H16V12h5.5zm0 8c1.66 0 3-1.34 3-3s-1.34-3-3-3H18v6h3.5z"
+          fill="#A97104"
+        />
+      </svg>
+      {showText && (
+        <span className="text-lg font-semibold tracking-tight text-primary">
+          Hibbullah
+        </span>
+      )}
+    </a>
+  );
+}
