@@ -5,7 +5,7 @@ import { Features } from "./sections/Features";
 import { DownloadSection } from "./sections/Download";
 import { Footer } from "./sections/Footer";
 
-function App() {
+export default function App() {
   return (
     <div className="min-h-screen">
       <Navbar />
@@ -19,5 +19,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
