@@ -6,7 +6,7 @@ export function Hero() {
     <section className="relative overflow-hidden pt-24 pb-16 sm:pt-28 sm:pb-20 lg:pt-32 lg:pb-24">
       {/* Soft ambient light — deference to content */}
       <div className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute top-0 left-1/2 h-[380px] w-[380px] -translate-x-1/2 rounded-full bg-primary/[0.035] blur-3xl dark:bg-primary/10" />
+        <div className="absolute top-0 left-1/2 h-95 w-95 -translate-x-1/2 rounded-full bg-primary/[0.035] blur-3xl dark:bg-primary/10" />
       </div>
 
       <div className="mx-auto max-w-5xl px-5 sm:px-6 lg:px-8">
@@ -14,19 +14,24 @@ export function Hero() {
           {/* Copy */}
           <div className="text-center lg:text-left">
             <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-black/[0.06] bg-black/[0.02] px-3 py-1 text-xs font-medium text-gray-600 dark:border-white/10 dark:bg-white/5 dark:text-gray-300">
-              <span className="h-1.5 w-1.5 rounded-full bg-gold" aria-hidden="true" />
+              <span
+                className="h-1.5 w-1.5 rounded-full bg-gold"
+                aria-hidden="true"
+              />
               Android Pharmacy App
             </p>
 
             <h1 className="text-balance text-[1.85rem] font-semibold tracking-tight text-gray-900 sm:text-4xl lg:text-[2.6rem] lg:leading-[1.12] dark:text-white">
               Your trusted{" "}
-              <span className="text-primary dark:text-emerald-400">pharmacy</span>
-              <br className="hidden sm:block" />
-              {" "}in your pocket
+              <span className="text-primary dark:text-emerald-400">
+                pharmacy
+              </span>
+              <br className="hidden sm:block" /> in your pocket
             </h1>
 
             <p className="mx-auto mt-5 max-w-sm text-[15px] leading-relaxed text-gray-500 sm:text-base lg:mx-0 dark:text-gray-400">
-              Search medicines, browse brands, and order with cash on delivery — from one simple Android app.
+              Search medicines, browse brands, and order with cash on delivery —
+              from one simple Android app.
             </p>
 
             <div className="mt-9 flex flex-col items-center gap-3 sm:flex-row sm:justify-center lg:justify-start">
@@ -50,7 +55,10 @@ export function Hero() {
 
           {/* Android device */}
           <div className="relative mx-auto flex justify-center lg:justify-end">
-            <PhoneMockup variant="home" className="relative z-10 animate-float" />
+            <PhoneMockup
+              variant="home"
+              className="relative z-10 animate-none motion-safe:animate-none"
+            />
           </div>
         </div>
       </div>
